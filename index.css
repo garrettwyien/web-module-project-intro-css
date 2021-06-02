@@ -84,6 +84,16 @@ nav a{
     padding:1% 1% ;
     line-height: 125%;
 }
+nav a:hover{
+    color:pink;
+    background-color:navy;
+    transition:.5s
+}
+nav a:active{
+    color:moccasin;
+    background-color:steelblue;
+    transition:.1s
+}
 .orange{
     background-color:#FF764E;
     margin-left: 16%;
