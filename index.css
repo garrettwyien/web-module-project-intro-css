@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+    box-sizing:border-box; /*this tells border and padding to be applied withing the width, rather than in addition to it*/
+    max-width:100%;/*You can never be bigger than your parent - this is going to stop the dreaded horizontal scroll bar */
+    /* border:1px solid grey; */
+    margin:0;
+    padding:0;
+}
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.8rem;
+    line-height:1.5;
+    color:black;
+    font-family: 'Roboto Mono', monospace;
+}
+h1{
+    font-family: 'Chelsea Market', cursive;
+    font-size:5rem;
+}
+section{
+    padding:4% 0;
+}
+a{
+    text-decoration: none;
+}
+/*Header Section Styles*/
+nav{
+    padding:3% 0 0 0;
+
+}
+nav a{
+    display:inline-block;
+    width:13.5%;
+    border-radius: 10px;
+    text-align: center;
+    color:#fff;
+    border:none;
+    padding:1% 1% ;
+    line-height: 125%;
+}
+nav a:hover{
+    color:pink;
+    background-color:navy;
+    transition:.5s
+}
+nav a:active{
+    color:moccasin;
+    background-color:steelblue;
+    transition:.1s
+}
+.orange{
+    background-color:#FF764E;
+    margin-left: 16%;
+}
+.blue{
+    background-color: #5ED3EB;
+    margin:0 11.5%;
+}
+.yellow{
+    background-color: #FFCD69;
+    margin-right: 16%;
+}
+
+/*Top Section Styles*/
+.top{
+    
+    position:relative;
+}
+.left img{
+    border-radius:50%;
+    width:50%;
+    
+}
+.left, .right{
+    display:inline-block;
+    text-align:center;
+}
+.left {
+    width:40%;
+}
+.right{
+    width:60%;
+    position:absolute;
+    margin-left:-5%;
+    top:20%; 
+}
+
+.right p{
+    width:50%;
+    text-align:center;
+    position:relative;
+    margin-left:15%;
+
+}
+.right h2{
+    padding:1% 0;
+    text-align:center;
+    margin-left:-7.5%;
+    font-weight: 500;
+    font-size:1.05em;
+}
+.right h1{
+    font-size:3.15em;
+    margin-left:-9%;
+    font-weight: 500;
+}
+/*Background image section*/
+.heroImg {
+    height:50vh;
+    background-image:url("assets/footer_img.jpg");
+    background-repeat: no repeat;
+    background-size:cover;
+    background-position:top;
+}
+
+/*Body section style*/
+.description p{
+    background-color:#DDB9A3;
+    color:white;
+    border: none;
+    text-align:center;
+    padding: 1% 3%;
+    width: 85%;
+    margin:0 7.5%;
+    font-size:1.05em;
+    line-height: 1.25;
+}
+
+/*Heads up section style*/
+.headsup{
+    font-size:1.4rem;
+    text-align:center;
+    padding: 1% 0%;
+}
+.headsup img{
+    width:10%;
+    margin:auto;
+}
+.headsup p{
+    width:22%;
+    text-align:center;
+    margin:auto;
+    line-height:1;
+}
+section.headsup p#truckp{
+    width:24%;
+}
+section.headsup span.bold{
+    font-weight: 700;
+}
+.bottom{
+    background-color:#F9E7DC;
+    padding:0 0 4% 0;
+}
